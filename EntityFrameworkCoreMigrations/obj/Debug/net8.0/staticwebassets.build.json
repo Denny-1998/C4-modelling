@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "fuSASfdkDS1frhJnBOoWEYMfYPQnDwzOqSg/dePs6lc=",
-  "Source": "EntityFrameworkCoreMigrations",
-  "BasePath": "_content/EntityFrameworkCoreMigrations",
+  "Hash": "j0c9bMJ5jsqzhPF5VFHs62krbDGMkhcqON2bGvkb1pg=",
+  "Source": "ProductService",
+  "BasePath": "_content/ProductService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

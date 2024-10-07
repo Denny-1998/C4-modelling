@@ -1,11 +1,23 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine
+# Use the .NET SDK image for build steps
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 
 WORKDIR /app
 
+# Copy the csproj file(s) and restore any dependencies
 COPY *.csproj ./
-
 RUN dotnet restore
 
-COPY *.dll ./
+# Copy the rest of your source code and build the application
+COPY . ./
+RUN dotnet publish -c Release -o out
 
+# Use the .NET runtime image for running the application
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+
+WORKDIR /app
+
+# Copy the built application from the build environment
+COPY --from=build-env /app/out .
+
+# Set the entry point for the application
 ENTRYPOINT ["dotnet", "ProductService.dll"]

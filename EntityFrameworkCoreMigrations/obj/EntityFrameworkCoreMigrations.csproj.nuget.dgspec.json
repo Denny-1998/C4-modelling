@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rosha\\C4-modelling\\C4-modelling\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj": {}
+    "C:\\Users\\denny\\OneDrive\\UNI\\C# Stuff\\DLS_Assignment_10_2024\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rosha\\C4-modelling\\C4-modelling\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj": {
+    "C:\\Users\\denny\\OneDrive\\UNI\\C# Stuff\\DLS_Assignment_10_2024\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rosha\\C4-modelling\\C4-modelling\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj",
-        "projectName": "EntityFrameworkCoreMigrations",
-        "projectPath": "C:\\Users\\rosha\\C4-modelling\\C4-modelling\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj",
-        "packagesPath": "C:\\Users\\rosha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rosha\\C4-modelling\\C4-modelling\\EntityFrameworkCoreMigrations\\obj\\",
+        "projectUniqueName": "C:\\Users\\denny\\OneDrive\\UNI\\C# Stuff\\DLS_Assignment_10_2024\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj",
+        "projectName": "ProductService",
+        "projectPath": "C:\\Users\\denny\\OneDrive\\UNI\\C# Stuff\\DLS_Assignment_10_2024\\EntityFrameworkCoreMigrations\\EntityFrameworkCoreMigrations.csproj",
+        "packagesPath": "C:\\Users\\denny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denny\\OneDrive\\UNI\\C# Stuff\\DLS_Assignment_10_2024\\EntityFrameworkCoreMigrations\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rosha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\denny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +49,30 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

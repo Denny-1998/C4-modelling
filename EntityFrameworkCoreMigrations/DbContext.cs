@@ -1,8 +1,9 @@
+using EntityFrameworkCoreMigrations.Models;
 using Microsoft.EntityFrameworkCore;
 
-public class YourDbContext : DbContext
+public class DbContext : Microsoft.EntityFrameworkCore.DbContext
 {
-    public YourDbContext(DbContextOptions<YourDbContext> options)
+    public DbContext(DbContextOptions<DbContext> options)
         : base(options)
     {
     }
@@ -10,4 +11,5 @@ public class YourDbContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Category> Categories { get; set; }
     public DbSet<ProductRating> ProductRatings { get; set; }
+    public DbSet<User> Users { get; set; }
 }

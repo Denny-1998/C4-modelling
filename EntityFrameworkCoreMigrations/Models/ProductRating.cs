@@ -1,3 +1,5 @@
+using EntityFrameworkCoreMigrations.Models;
+
 public class ProductRating
 {
     public int Id { get; set; }
@@ -10,7 +12,5 @@ public class ProductRating
 
     public int Rating { get; set; }
 
-    // Add other properties as needed, such as:
-    // public string Review { get; set; }
-    // public DateTime CreatedAt { get; set; } = DateTime.Now;
+    
 }
